@@ -1,0 +1,26 @@
+/*Return a list of all cities, states, and the days on market for each month in 2018. Sort by the state from A to Z.*/
+select regionname, 
+statename,
+january_2018,
+february_2018,
+march_2018,
+april_2018,
+may_2018,
+june_2018,
+july_2018,
+august_2018,
+september_2018,
+october_2018,
+november_2018,
+december_2018
+from Days_on_Market
+order by statename asc
+
+/*Return a list of all states, metro, counties, and the size rank for the single family homes rental market. Sort the metro areas from Z to A.*/
+select state,
+metro,
+countyname,
+sizerank
+from City_SFH_For_Rent
+order by metro desc
+
